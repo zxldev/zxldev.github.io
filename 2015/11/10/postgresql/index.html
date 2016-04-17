@@ -5,19 +5,16 @@
   
   <title>postgresql | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##sql 语句12-- 删除整个表里的数据，不记录日志，速度比DELETE语句快。TRUNCATE TABLE users;
-锁机制锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由">
+  <meta name="description" content="##sql 语句\n```sql\n– 删除整个表里的数据，不记录日志，速度比DELETE语句快。\n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="postgresql">
 <meta property="og:url" content="http://yoursite.com/2015/11/10/postgresql/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##sql 语句12-- 删除整个表里的数据，不记录日志，速度比DELETE语句快。TRUNCATE TABLE users;
-锁机制锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由">
-<meta property="og:updated_time" content="2016-04-17T07:06:30.107Z">
+<meta property="og:description" content="##sql 语句\n```sql\n– 删除整个表里的数据，不记录日志，速度比DELETE语句快。\n">
+<meta property="og:updated_time" content="2016-04-17T07:53:58.584Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="postgresql">
-<meta name="twitter:description" content="##sql 语句12-- 删除整个表里的数据，不记录日志，速度比DELETE语句快。TRUNCATE TABLE users;
-锁机制锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由">
+<meta name="twitter:description" content="##sql 语句\n```sql\n– 删除整个表里的数据，不记录日志，速度比DELETE语句快。\n">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -157,7 +154,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/centos/">centos</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zephir/">zephir</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/centos/">centos</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sphinx/">sphinx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zephir/">zephir</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/阅读/">阅读</a></li></ul>
                     </div>
                 </section>
                 
@@ -269,26 +266,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>##sql 语句<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 删除整个表里的数据，不记录日志，速度比DELETE语句快。</span></span><br><span class="line"><span class="keyword">TRUNCATE</span> <span class="keyword">TABLE</span> <span class="keyword">users</span>;</span><br></pre></td></tr></table></figure></p>
-<h1 id="锁机制"><a href="#锁机制" class="headerlink" title="锁机制"></a>锁机制</h1><p>锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由于对 Postgres 的锁机制不太了解导致的。虽然锁机制在 Postgres 内部很重要，但是文档缺非常缺乏，有时甚至还是错误的，与文档所指出的结果不一致。我会告诉你精通 Postgres 的锁机制需要知道的一切，要知道对锁了解的越多，解决与锁相关的问题就会越快。</p>
-<p>##文档里都说了些什么？<br>Postgres 有 3 种锁机制：表级锁，行级锁和建议性锁。表级和行级的锁可以是显式的也可以是隐式的。建议性锁一般是显式的。显式的锁由显式的用户请求（通过特殊的查询）获取，隐式的锁是通过标准的 SQL 命令来获取。<br>除了表级和行级的锁，还有页级共享/排除锁，用于控制对共享缓存池里表页的访问。在一行数据被读取或者更新后，这些锁会立即被释放。应用程序开发者通常不需要关注页级的锁。<br>锁机制会不时的变动，所以我们这里只针对 Postgres 9.x 的版本。9.1 和 9.2 基本上是差不多的，9.3 和 9.4 跟它们有些区别，主要涉及行级锁。</p>
-<p>##表级锁<br>大多数的表级锁是由内置的 SQL 命令获得的，但他们也可以通过锁命令来明确获取。可使用的表级锁包括：</p>
-<ul>
-<li><strong>访问共享（ACCESS SHARE）</strong> - SELECT 命令可在查询中引用的表上获得该锁。一般规则是所有的查询中只有读表才获取此锁。</li>
-<li><strong>行共享（ROW SHARE）</strong> - SELECT FOR UPDATE 和 SELECT FOR SHARE 命令可在目标表上获得该锁（以及查询中所有引用的表的访问共享锁）。</li>
-<li><strong>行独占（ROW EXCLUSIVE）</strong> - UPDATE、INSERT 和 DELETE 命令在目标表上获得该锁（以及查询中所有引用的表的访问共享锁）。 一般规则是所有修改表的查询获得该锁。</li>
-<li><strong>共享更新独占（SHARE UPDATE EXCLUSIVE）</strong> - VACUUM（不含FULL），ANALYZE，CREATE INDEX CONCURRENTLY，和一些 ALTER TABLE 的命令获得该锁。</li>
-<li><strong>共享（SHARE）</strong> - CREATE INDEX 命令在查询中引用的表上获得该锁。<br>共享行独占（SHARE ROW EXCLUSIVE） - 不被任何命令隐式获取。</li>
-<li><strong>排他（EXCLUSIVE）</strong> - 这个锁模式在事务获得此锁时只允许读取操作并行。它不能由任何命令隐式获取。</li>
-<li><strong>访问独占（ACCESS EXCLUSIVE）</strong> - ALTER TABLE，DROP TABLE，TRUNCATE，REINDEX，CLUSTER 和 VACUUM FULL 命令在查询中引用的表上获得该锁。此锁模式是 LOCK 命令的默认模式。</li>
-</ul>
-<p>重要的是要知道，所有这些锁都是表级锁，即使它们名称里有行（ROW）字。</p>
-<p>每个锁模式的最重要的信息是与彼此冲突的模式列表。在同一时间同一个表中，2 个事务不能同时保持相冲突的锁模式。事务永远不会与自身发生冲突。 非冲突的锁可以支持多事务并发。同样重要的是要知道有的模式和自身冲突。一些锁模式在获得后会持续到事务结束。但如果锁是在建立一个保存点后获得，保存点回滚后锁会被立刻释放。 下面的表格展示了哪些模式是互相冲突的：</p>
-<p>##劝告锁<br>Postgres提供创建具有应用定义的锁的方法，这些被称为劝告锁（advisory locks），因为系统并不支持其使用，其取决于应用对锁的正确使用。</p>
-<p>Postgres中有两种途径可以获得一个劝告锁：会话层级或事务层级。一旦在会话层级获得劝告锁，会一直保持到被显式释放或会话结束。不同于标准的锁请求，会话层级的劝告锁请求并不遵守事务语义：事务被回滚后锁也会随着回滚保持着，同样地即使调用锁的事务之后失败了，解锁请求仍然是有效的。一个锁可以被拥有它的进程多次获取；对于每个完成的锁请求，在锁被真正释放前一定要有一个对应的解锁请求。</p>
-<p>另一方面，事务层级的锁请求表现得更像普通的锁请求：它们在事务结束时会自动释放，并且没有显式的解锁操作。对于短暂地使用劝告锁，这种特性通常比会话层级更方便。可以想见，会话层级与事务层级请求同一个劝告锁标识符会互相阻塞。如果一个会话已经有了一个劝告锁，它再请求时总会成功的，即使其他会话在等待此锁；不论保持现有的锁和新的请求是会话层级还是事务层级，都是这样。文档中可以找到操作劝告锁的完整函数列表。</p>
-<p>这里有几个获取事务层级劝告锁的例子（pg_locks是系统视图，文章之后会说明。它存有事务保持的表级锁和劝告锁的信息）：</p>
-<p>启动第一个psql会话，开始一个事务并获取一个劝告锁：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Transaction 1</span></span><br><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">SELECT</span> pg_advisory_xact_lock(<span class="number">1</span>);</span><br><span class="line"><span class="comment">-- Some work here</span></span><br></pre></td></tr></table></figure></p>
+        <p>##sql 语句<br>\n```sql<br>\n– 删除整个表里的数据，不记录日志，速度比DELETE语句快。<br>\n<a id="more"></a>\nTRUNCATE TABLE users;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 锁机制</span><br><span class="line"></span><br><span class="line">锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由于对 Postgres 的锁机制不太了解导致的。虽然锁机制在 Postgres 内部很重要，但是文档缺非常缺乏，有时甚至还是错误的，与文档所指出的结果不一致。我会告诉你精通 Postgres 的锁机制需要知道的一切，要知道对锁了解的越多，解决与锁相关的问题就会越快。</span><br><span class="line">##文档里都说了些什么？</span><br><span class="line">Postgres 有 3 种锁机制：表级锁，行级锁和建议性锁。表级和行级的锁可以是显式的也可以是隐式的。建议性锁一般是显式的。显式的锁由显式的用户请求（通过特殊的查询）获取，隐式的锁是通过标准的 SQL 命令来获取。</span><br><span class="line">除了表级和行级的锁，还有页级共享/排除锁，用于控制对共享缓存池里表页的访问。在一行数据被读取或者更新后，这些锁会立即被释放。应用程序开发者通常不需要关注页级的锁。</span><br><span class="line">锁机制会不时的变动，所以我们这里只针对 Postgres 9.x 的版本。9.1 和 9.2 基本上是差不多的，9.3 和 9.4 跟它们有些区别，主要涉及行级锁。</span><br><span class="line"></span><br><span class="line">##表级锁</span><br><span class="line">大多数的表级锁是由内置的 SQL 命令获得的，但他们也可以通过锁命令来明确获取。可使用的表级锁包括：</span><br><span class="line">*  **访问共享（ACCESS SHARE）** - SELECT 命令可在查询中引用的表上获得该锁。一般规则是所有的查询中只有读表才获取此锁。</span><br><span class="line">* **行共享（ROW SHARE）** - SELECT FOR UPDATE 和 SELECT FOR SHARE 命令可在目标表上获得该锁（以及查询中所有引用的表的访问共享锁）。</span><br><span class="line">* **行独占（ROW EXCLUSIVE）** - UPDATE、INSERT 和 DELETE 命令在目标表上获得该锁（以及查询中所有引用的表的访问共享锁）。 一般规则是所有修改表的查询获得该锁。</span><br><span class="line">* **共享更新独占（SHARE UPDATE EXCLUSIVE）** - VACUUM（不含FULL），ANALYZE，CREATE INDEX CONCURRENTLY，和一些 ALTER TABLE 的命令获得该锁。</span><br><span class="line">* **共享（SHARE）** - CREATE INDEX 命令在查询中引用的表上获得该锁。</span><br><span class="line">共享行独占（SHARE ROW EXCLUSIVE） - 不被任何命令隐式获取。</span><br><span class="line">* **排他（EXCLUSIVE）** - 这个锁模式在事务获得此锁时只允许读取操作并行。它不能由任何命令隐式获取。</span><br><span class="line">* **访问独占（ACCESS EXCLUSIVE）** - ALTER TABLE，DROP TABLE，TRUNCATE，REINDEX，CLUSTER 和 VACUUM FULL 命令在查询中引用的表上获得该锁。此锁模式是 LOCK 命令的默认模式。</span><br><span class="line"></span><br><span class="line">重要的是要知道，所有这些锁都是表级锁，即使它们名称里有行（ROW）字。</span><br><span class="line"></span><br><span class="line">每个锁模式的最重要的信息是与彼此冲突的模式列表。在同一时间同一个表中，2 个事务不能同时保持相冲突的锁模式。事务永远不会与自身发生冲突。 非冲突的锁可以支持多事务并发。同样重要的是要知道有的模式和自身冲突。一些锁模式在获得后会持续到事务结束。但如果锁是在建立一个保存点后获得，保存点回滚后锁会被立刻释放。 下面的表格展示了哪些模式是互相冲突的：</span><br><span class="line"></span><br><span class="line">##劝告锁</span><br><span class="line">Postgres提供创建具有应用定义的锁的方法，这些被称为劝告锁（advisory locks），因为系统并不支持其使用，其取决于应用对锁的正确使用。</span><br><span class="line"></span><br><span class="line">Postgres中有两种途径可以获得一个劝告锁：会话层级或事务层级。一旦在会话层级获得劝告锁，会一直保持到被显式释放或会话结束。不同于标准的锁请求，会话层级的劝告锁请求并不遵守事务语义：事务被回滚后锁也会随着回滚保持着，同样地即使调用锁的事务之后失败了，解锁请求仍然是有效的。一个锁可以被拥有它的进程多次获取；对于每个完成的锁请求，在锁被真正释放前一定要有一个对应的解锁请求。</span><br><span class="line"></span><br><span class="line">另一方面，事务层级的锁请求表现得更像普通的锁请求：它们在事务结束时会自动释放，并且没有显式的解锁操作。对于短暂地使用劝告锁，这种特性通常比会话层级更方便。可以想见，会话层级与事务层级请求同一个劝告锁标识符会互相阻塞。如果一个会话已经有了一个劝告锁，它再请求时总会成功的，即使其他会话在等待此锁；不论保持现有的锁和新的请求是会话层级还是事务层级，都是这样。文档中可以找到操作劝告锁的完整函数列表。</span><br><span class="line"></span><br><span class="line">这里有几个获取事务层级劝告锁的例子（pg_locks是系统视图，文章之后会说明。它存有事务保持的表级锁和劝告锁的信息）：</span><br><span class="line"></span><br><span class="line">启动第一个psql会话，开始一个事务并获取一个劝告锁：</span><br><span class="line">```sql</span><br><span class="line">-- Transaction 1</span><br><span class="line">BEGIN;</span><br><span class="line">SELECT pg_advisory_xact_lock(1);</span><br><span class="line">-- Some work here</span><br></pre></td></tr></table></figure></p>
 <p>现在启动第二个psql会话并在同一个劝告锁上执行一个新的事务：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Transaction 2</span></span><br><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">SELECT</span> pg_advisory_xact_lock(<span class="number">1</span>);</span><br><span class="line"><span class="comment">-- This transaction is now blocked</span></span><br></pre></td></tr></table></figure></p>
 <p>在第三个psql会话里我们可以看下这个锁现在的情况：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> pg_locks;<span class="comment">-- Only relevant parts of output</span></span><br><span class="line">   locktype    | database | relation | page | tuple | virtualxid | transactionid | classid | objid | objsubid | virtualtransaction |  pid  |        mode         | granted |fastpath<span class="comment">---------------+----------+----------+------+-------+------------+---------------+---------+-------+----------+--------------------+-------+---------------------+---------+----------</span></span><br><span class="line">    advisory   |    16393 |          |      |       |            |               |       0 |     1 |        1 | 4/36               |  1360 | ExclusiveLock       | f       | f</span><br><span class="line">    advisory   |    16393 |          |      |       |            |               |       0 |     1 |        1 | 3/186              | 14340 | ExclusiveLock       | t       | f</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Transaction 1</span></span><br><span class="line"><span class="keyword">COMMIT</span>;</span><br><span class="line"><span class="comment">-- This transaction now released lock, so Transaction 2 can continue</span></span><br></pre></td></tr></table></figure>
@@ -308,7 +286,7 @@
         <p><span>本文标题:</span><a href="/2015/11/10/postgresql/">postgresql</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">John Doe</a></p>
         <p><span>发布时间:</span>2015-11-10, 11:10:33</p>
-        <p><span>最后更新:</span>2016-04-17, 15:06:30</p>
+        <p><span>最后更新:</span>2016-04-17, 15:53:58</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2015/11/10/postgresql/" title="postgresql">http://yoursite.com/2015/11/10/postgresql/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/11/10/postgresql/　　作者: John Doe" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -331,8 +309,8 @@
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2015/09/04/c/">
-                    c
+                <a href="/2015/10/23/makefile编写/">
+                    makefile编写
                 </a>
             </div>
         
@@ -343,7 +321,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#锁机制"><span class="toc-number">1.</span> <span class="toc-text">锁机制</span></a></li></ol>
+    
 </div>
 <style>
     .left-col .switch-btn {
@@ -428,13 +406,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2015/09/04/c/" title="下一篇: c">
+            <a href="/2015/10/23/makefile编写/" title="下一篇: makefile编写">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/Could not apply the stored configuration for monitors/">Could not apply the stored configuration for monitors</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/18/zephir/">zephir</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/10/postgresql/">postgresql</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/c/">c</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/php/">php</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/Could not apply the stored configuration for monitors/">Could not apply the stored configuration for monitors</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/07/安装php7/">安装php7</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/11/android开发/">android开发</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/18/zephir/">zephir</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/10/postgresql/">postgresql</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/23/makefile编写/">makefile编写</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/13/linux 定时任务/">linux 定时任务</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/10/数据结构考试准备/">数据结构考试准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/jquery选择器/">jquery选择器</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/数据结构与算法 - 排序/">数据结构与算法 - 排序</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/c/">c</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/阅读列表/">阅读列表</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/28/垂死病中惊坐起，暗风吹雨入寒窗。/">垂死病中惊坐起，暗风吹雨入寒窗。</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/前端js介绍/">前端js介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/博客开发技术/">博客开发技术</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/php/">php</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/26/待办列表/">待办列表</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/23/博客强行上线！/">博客强行上线！</a></li></ul>
 
 
 

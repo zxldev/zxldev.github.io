@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  
+  <title>前端js介绍 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#CDN\n\n&amp;gt; 转载自\n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端js介绍">
+<meta property="og:url" content="http://yoursite.com/2015/08/27/前端js介绍/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#CDN\n\n&amp;gt; 转载自\n">
+<meta property="og:updated_time" content="2016-04-17T07:53:58.582Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端js介绍">
+<meta name="twitter:description" content="#CDN\n\n&amp;gt; 转载自\n">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+      <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
+  
+  
+  
+      <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+      <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+  
+  <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.9/clipboard.min.js"></script>
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false,
+          fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+          scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.0.9/scrollreveal.min.js"
+      }
+  </script>
+
+  
+      <script>
+          yiliaConfig.rootUrl = "/";
+      </script>
+  
+
+  
+  
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">John Doe</a></h1>
+        </hgroup>
+
+        
+                
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:123@123.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="#" title="GitHub"></a></li>
+                            
+                                <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/centos/">centos</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sphinx/">sphinx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zephir/">zephir</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/阅读/">阅读</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:123@123.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="#" title="GitHub"></a></li>
+                            
+                                <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-前端js介绍" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/27/前端js介绍/" class="article-date">
+      <time datetime="2015-08-27T15:00:21.000Z" itemprop="datePublished">2015-08-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      前端js介绍
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/代码/">代码</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>#CDN<br>\n<br>\n&gt; <a href="http://www.oschina.net/news/53128/public-cdn" target="_blank" rel="external">转载自</a><br>\n<a id="more"></a>\n</p>
+<ul>
+<li><a href="http://www.bootcdn.cn/" target="_blank" rel="external"> Bootstrap中文网CDN</a></li>
+<li><a href="http://cdn.code.baidu.com/" target="_blank" rel="external">百度CDN</a></li>
+<li><a href="http://libs.useso.com/" target="_blank" rel="external">360CDN</a></li>
+<li><a href="http://lib.sinaapp.com/" target="_blank" rel="external">新浪CDN</a></li>
+<li><a href="http://www.cdnjs.net/" target="_blank" rel="external">CDNJS</a><blockquote>
+<p>CDNJS应该算是最完整的的JS库了。存储了大部分主流的 JS 库，甚至 CSS、image 和 swf，不过很多国内优秀开源库是没有的。很多国外前卫的Js库在CDNJS大都能找到。国内的速度虽然比不上其他的几个国内的CDN服务，但是相对来说 其实还可以。</p>
+</blockquote>
+</li>
+<li><a href="http://www.staticfile.org/" target="_blank" rel="external">七牛CND</a><ul>
+<li><a href="http://dn-cdnjsnet.qbox.me/" target="_blank" rel="external">七牛云</a><blockquote>
+<p>七牛云存储提供一个尽可能全面收录优秀开源库的仓库，并免费提供 CDN 加速服务。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><a href="http://jscdn.upai.com/" target="_blank" rel="external">又拍CDN</a></p>
+<ul>
+<li><a href="http://cdnjsnet.b0.upaiyun.com/" target="_blank" rel="external">又拍云</a><blockquote>
+<p>又拍云js库提供了常用的JavaScript库CDN服务。算是起步较早的cdn加速服务了。速度和稳定性也不错。不过js库有点少，有些前卫的js库可能不提供</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><a href="https://developers.google.com/speed/libraries/" target="_blank" rel="external">Google Hosted Libraries</a></p>
+</li>
+<li><a href="http://www.asp.net/ajaxlibrary/cdn.ashx" target="_blank" rel="external">Microsoft ASP.net CDN</a></li>
+<li><a href="http://www.jsdelivr.com/" target="_blank" rel="external">jsDelivr</a></li>
+</ul>
+<p>#js模块</p>
+<ul>
+<li><a href="http://fabien-d.github.io/alertify.js/" target="_blank" rel="external">alertify</a> 对话框、消息框</li>
+<li><a href="http://simplemodal.plasm.it/" target="_blank" rel="external">simplemodal</a> 对话框</li>
+<li><a href="https://github.com/sciactive/pnotify" target="_blank" rel="external">pnotify</a> 消息通知</li>
+<li><a href="http://daneden.github.io/animate.css/" target="_blank" rel="external">animate</a> css实现的动画效果</li>
+<li><p><a href="http://bootswatch.com/" target="_blank" rel="external">bootswatch</a> bootstrap的样式扩展集<a href="http://wrapbootstrap.com/preview/WB09JXK43" target="_blank" rel="external">[例]</a></p>
+</li>
+<li><p><a href="https://github.com/usablica/intro.js" target="_blank" rel="external">intro</a> / <a href="http://heelhook.github.io/chardin.js/" target="_blank" rel="external">chardin</a> 做网页第一次指引用户提示帮助的样式</p>
+</li>
+<li><a href="https://github.com/harvesthq/chosen" target="_blank" rel="external">chosen</a> 比较简洁功的选择框</li>
+<li><a href="https://github.com/google/code-prettify" target="_blank" rel="external">code-prettify</a> 查看网页源代码</li>
+<li><a href="http://square.github.com/crossfilter/" target="_blank" rel="external">cryptico</a> javasrcipt的RSA、AES加密解密工具</li>
+<li><a href="https://github.com/mbostock/d3" target="_blank" rel="external">d3</a> 强到不用介绍</li>
+<li><a href="http://draggabilly.desandro.com/" target="_blank" rel="external">draggabilly</a> 强大的拖拽控件</li>
+<li><a href="http://www.dropzonejs.com/" target="_blank" rel="external">dropzonejs</a> 拖拽图片上传控件</li>
+<li><a href="https://github.com/oyvindkinsey/easyXDM" target="_blank" rel="external">easyXDM</a> 跨浏览器、跨站 消息、方法调用【没看懂不觉名厉】</li>
+<li><a href="https://github.com/ecomfe/echarts" target="_blank" rel="external">echarts</a> 强大的百度图表工具</li>
+<li><a href="https://github.com/vega/vega" target="_blank" rel="external">vega</a> 强大的图标处理工具</li>
+<li><a href="http://sigmajs.org/" target="_blank" rel="external">sigmajs</a> 关系图绘图工具</li>
+<li><a href="http://epiceditor.com/" target="_blank" rel="external">dpiceditor</a> markdown编辑器，应该比我自己做的强大。回来研究学习一下。</li>
+<li><a href="http://tsvensen.github.io/equalize.js/" target="_blank" rel="external">equalize</a> 元素宽高对齐【这个工具让我这个css白痴做梦都能笑出来】</li>
+<li><a href="https://github.com/JacksonTian/eventproxy" target="_blank" rel="external">eventproxy</a> javascript 事件组织工具，【有中文介绍，多参考学习】</li>
+<li><a href="https://github.com/dexteryy/EventMaster" target="_blank" rel="external">EventMaster</a> 同上</li>
+<li><a href="https://github.com/kangax/fabric.js" target="_blank" rel="external">fabric</a> html5 图形库，支持SVG-to-Canvas (&amp; canvas-to-SVG)</li>
+<li><a href="https://github.com/Marak/faker.js" target="_blank" rel="external">faker</a> 测试数据制造机器</li>
+<li><a href="https://github.com/fancyapps/fancyBox" target="_blank" rel="external">fancyBox</a> 缩略图、查看大图工具</li>
+<li><a href="https://github.com/lokesh/lightbox2" target="_blank" rel="external">lightbox2</a> 缩略图、查看大图工具</li>
+<li><a href="https://github.com/ejci/favico.js" target="_blank" rel="external">favico</a> 可以控制favico显示图片、视频、消息提醒、视频等等</li>
+<li><a href="https://github.com/tommoor/tinycon" target="_blank" rel="external">tinycon</a>  控制favico，只能添加消息数量，有点弱</li>
+<li><a href="https://github.com/davatron5000/FitText.js" target="_blank" rel="external">FitText</a> 响应式字体大小</li>
+<li><a href="http://clubdesign.github.io/floatlabels.js/" target="_blank" rel="external">floatlabels</a>很简单的输入提示工具，在输入过程中一直友好的提示</li>
+<li><a href="https://github.com/guillaumepotier/Garlic.js" target="_blank" rel="external">Garlic</a> 在用户提交表单前，缓存用户输入数据到本地</li>
+<li><a href="https://github.com/hammerjs/hammer.js" target="_blank" rel="external">hammer</a> 记录浏览器手势，左滑，右滑等</li>
+<li><a href="http://handlebarsjs.com/" target="_blank" rel="external">handlebars</a> 前端的模板引擎</li>
+<li><a href="https://github.com/sentsin/laytpl" target="_blank" rel="external">laytpl</a> 前端的模板引擎,国产。号称比juicer等主流框架快一倍</li>
+<li><a href="https://github.com/paularmstrong/swig" target="_blank" rel="external">swig</a> 模板引擎</li>
+<li><a href="https://highlightjs.org/" target="_blank" rel="external">highlight</a> 强大的代码着色工具，支持很多种代码、样式主题</li>
+<li><a href="https://github.com/PrismJS/prism" target="_blank" rel="external">prism</a> 代码高亮</li>
+<li><a href="https://github.com/wavded/humane-js" target="_blank" rel="external">humane-js</a> 浏览器对话框</li>
+<li><a href="https://github.com/tuupola/jquery_lazyload" target="_blank" rel="external">jqueryLazyLoad</a> 图片延迟加载</li>
+<li><a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank" rel="external">javascript-state-machine</a> 看的不是很懂，可以做流程图?</li>
+<li><a href="https://github.com/jeromeetienne/jquery-qrcode" target="_blank" rel="external">jquery-qrcode</a> jquery二维码</li>
+<li><a href="https://github.com/millermedeiros/js-signals" target="_blank" rel="external">js-signals</a> 信号、应该还是事件处理类的</li>
+<li><a href="http://url.websanova.com/" target="_blank" rel="external">js-url</a> 获取url里值的各种姿势</li>
+<li><a href="https://github.com/madrobby/keymaster" target="_blank" rel="external">keymaster</a> 键盘快捷键</li>
+<li><a href="https://github.com/ded/Kizzy" target="_blank" rel="external">Kizzy</a> 号称网页端的memcached</li>
+<li><a href="https://github.com/iwillwen/mindb" target="_blank" rel="external">mindb</a> 这接口风格绝对是网页端的redis</li>
+<li><a href="https://github.com/moment/moment" target="_blank" rel="external">moment</a> 操作时间函数库</li>
+<li><a href="http://labs.music.baidu.com/muplayer/doc/index.html" target="_blank" rel="external">muplayer</a> 百度音乐播放器内核</li>
+<li><a href="http://ricostacruz.com/nprogress/" target="_blank" rel="external">nprogress</a> 页面顶端加载进度条</li>
+<li><a href="https://github.com/HubSpot/pace" target="_blank" rel="external">pace</a> 应该同上，官网看不成，未测试</li>
+<li><a href="http://www.opentip.org/" target="_blank" rel="external">opentip</a> 强大的标签提示工具</li>
+<li><a href="https://github.com/qTip2/qTip2" target="_blank" rel="external">qTip2</a> 标签提示工具 ie6+</li>
+<li><a href="https://github.com/mbostock/queue" target="_blank" rel="external">queue</a> async队列</li>
+<li><a href="https://github.com/soyjavi/QuoJS" target="_blank" rel="external">QuoJS</a> 移动手机端JS库</li>
+<li><a href="http://owlgraphic.com/owlcarousel/" target="_blank" rel="external">owlcarousel</a> 图片等元素轮播效果，可拖动</li>
+<li><a href="https://github.com/paperjs/paper.js" target="_blank" rel="external">paper</a> 很强大的绘图工具</li>
+<li><a href="http://raphaeljs.com/" target="_blank" rel="external">raphaeljs</a> 绘图工具</li>
+<li><a href="https://facebook.github.io/react/index.html" target="_blank" rel="external">react</a> facebook js lib</li>
+<li><a href="https://github.com/baixing/puerh" target="_blank" rel="external">puerh</a> 百姓网UI库</li>
+<li><a href="https://github.com/yahoo/pure" target="_blank" rel="external">pure</a> 雅虎UI库</li>
+<li><a href="https://github.com/qatrix/Qatrix" target="_blank" rel="external">Qatrix</a> 很简单的js库，可以学习一下</li>
+<li><a href="https://github.com/guybedford/require-css" target="_blank" rel="external">require-css</a></li>
+<li><a href="https://github.com/jrburke/requirejs" target="_blank" rel="external">requirejs</a></li>
+<li><a href="http://seajs.org/docs/" target="_blank" rel="external">seajs</a></li>
+<li><a href="https://github.com/ded/reqwest" target="_blank" rel="external">reqwest</a> 像是封装了一次ajax的感觉、async,支持xmlHttpRequest, JSONP, CORS, and CommonJS </li>
+<li><a href="https://github.com/visionmedia/superagent" target="_blank" rel="external">superagent</a> 封装了一次ajax的感觉,链式模式</li>
+<li><a href="http://layer.layui.com/" target="_blank" rel="external">layer</a> 国内一家做弹出层的，好像挺实用</li>
+<li><a href="https://github.com/markgoodyear/scrollup" target="_blank" rel="external">scrollup</a> 回到顶部……</li>
+<li><a href="https://github.com/rstacruz/jquery.transit" target="_blank" rel="external">transit</a> css3动画转换效果</li>
+<li><a href="https://github.com/max-favilli/tagmanager" target="_blank" rel="external">tagmanager</a> 标签组件</li>
+<li><a href="http://sliptree.github.io/bootstrap-tokenfield/" target="_blank" rel="external">tokenfield</a> 标签组件</li>
+<li><a href="https://github.com/NUKnightLab/TimelineJS" target="_blank" rel="external">TimelineJS</a> 时间轴，不过方式比较过时啊</li>
+<li><a href="https://github.com/qrohlf/trianglify" target="_blank" rel="external">trianglify</a> 高大上的三角形波浪背景</li>
+<li><a href="https://github.com/twitter/typeahead.js" target="_blank" rel="external">typeahead</a> input输入过滤框</li>
+<li><a href="https://select2.github.io/examples.html" target="_blank" rel="external">select2</a> 下拉列表，支持标签、复选、主题等</li>
+<li><a href="https://github.com/brianreavis/selectize.js" target="_blank" rel="external">selectize</a> 选择控件</li>
+<li><a href="https://github.com/jquery/sizzle" target="_blank" rel="external">sizzle</a> 功能更全面的类选择器</li>
+<li><a href="https://github.com/Prinzhorn/skrollr" target="_blank" rel="external">skrollr</a> 很炫酷的页面滚动效果，支持移动端和桌面、不依赖jquery</li>
+<li><a href="https://github.com/andrewplummer/Sugar" target="_blank" rel="external">Sugar</a> 很好的js基本类型操作扩展</li>
+<li><a href="http://getuikit.com/" target="_blank" rel="external">getuikit</a> uikit</li>
+<li><a href="https://github.com/chriso/validator.js" target="_blank" rel="external">validator</a> 校验工具 好像不能校验表单，感觉好弱，看看jquery validator</li>
+<li><a href="https://github.com/videojs/video.js" target="_blank" rel="external">video</a> 视频控件</li>
+<li><a href="https://github.com/impress/impress.js" target="_blank" rel="external">impress</a> 幻灯片一样的样式、hash切换页面</li>
+<li><a href="http://lab.hakim.se/reveal-js/" target="_blank" rel="external">reveal</a> 幻灯片一样的样式、hash切换页面【可考虑做树形小说阅读器】</li>
+<li><a href="http://yuilibrary.com/" target="_blank" rel="external">yui</a> 雅虎前端库，已停止开发</li>
+<li><a href="https://github.com/madrobby/zepto" target="_blank" rel="external">zepto</a> 加载速度快，多用作移动端</li>
+</ul>
+<p>#前端/Node</p>
+<ul>
+<li><a href="https://github.com/knockout/knockout" target="_blank" rel="external">knockout</a></li>
+<li><a href="http://www.gowhich.com/blog/679" target="_blank" rel="external">提高前端效率工具</a></li>
+<li><a href="http://mootools.net/" target="_blank" rel="external">mootools</a> 一套东西，不明</li>
+<li><a href="https://github.com/search?l=Java&amp;o=desc&amp;q=platform&amp;ref=searchresults&amp;s=stars&amp;type=Repositories&amp;utf8=%E2%9C%93" target="_blank" rel="external">platform</a> </li>
+<li><a href="https://www.meteor.com/" target="_blank" rel="external">meteor</a></li>
+<li><a href="http://dimitarchristoff.github.io/primish/" target="_blank" rel="external">primish</a></li>
+<li><a href="https://github.com/sstephenson/prototype" target="_blank" rel="external">prototype</a></li>
+<li><a href="https://github.com/kriskowal/q" target="_blank" rel="external">Q</a> 事件处理顺序</li>
+<li><a href="https://github.com/ractivejs/ractive" target="_blank" rel="external">ractive</a> h5框架，语法简单</li>
+<li><a href="https://github.com/madrobby/scriptaculous" target="_blank" rel="external">scriptaculous</a> visual effects and interface behaviours.</li>
+</ul>
+<p>#Q<br>Sass?</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2015/08/27/前端js介绍/">前端js介绍</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Doe</a></p>
+        <p><span>发布时间:</span>2015-08-27, 23:00:21</p>
+        <p><span>最后更新:</span>2016-04-17, 15:53:58</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2015/08/27/前端js介绍/" title="前端js介绍">http://yoursite.com/2015/08/27/前端js介绍/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/08/27/前端js介绍/　　作者: John Doe" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/08/28/垂死病中惊坐起，暗风吹雨入寒窗。/">
+                    垂死病中惊坐起，暗风吹雨入寒窗。
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/08/27/博客开发技术/">
+                    博客开发技术
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <li id="bds_twi"><a href="#" class="bds_twi" data-cmd="twi" title="分享到推特"></a></li>
+            <li id="bds_tsina"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></li>
+            <li id="bds_sqq"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a></li>
+            <li id="bds_copy"><a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a></li>
+            <li id="bds_mail"><a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a></li>
+            <li id="bds_weixin"><a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a></li>
+            <li id="bds_more"><a href="#" class="bds_more" data-cmd="more"></i></a></li>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"前端js介绍　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/08/28/垂死病中惊坐起，暗风吹雨入寒窗。/" title="上一篇: 垂死病中惊坐起，暗风吹雨入寒窗。">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/08/27/博客开发技术/" title="下一篇: 博客开发技术">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/Could not apply the stored configuration for monitors/">Could not apply the stored configuration for monitors</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/07/安装php7/">安装php7</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/11/android开发/">android开发</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/18/zephir/">zephir</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/10/postgresql/">postgresql</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/23/makefile编写/">makefile编写</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/13/linux 定时任务/">linux 定时任务</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/10/数据结构考试准备/">数据结构考试准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/jquery选择器/">jquery选择器</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/数据结构与算法 - 排序/">数据结构与算法 - 排序</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/c/">c</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/阅读列表/">阅读列表</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/28/垂死病中惊坐起，暗风吹雨入寒窗。/">垂死病中惊坐起，暗风吹雨入寒窗。</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/前端js介绍/">前端js介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/博客开发技术/">博客开发技术</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/php/">php</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/26/待办列表/">待办列表</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/23/博客强行上线！/">博客强行上线！</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 John Doe
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
