@@ -3,39 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>jquery选择器 | Hexo</title>
+  <title>jquery选择器 | 赵枫杨的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="\njQuery 的选择器可谓之强大无比，这里简单地总结一下常用的元素查找方法 
-\n 
-\n&amp;lt;!-- more --&amp;gt;\n$(&quot;#myELement&quot;)    选择id值等于myElement的元素，id值不能重复在文档中只能有一个id值是myElement所以得到的是唯一的元素 
-$(&quot;div&quot;)           选择所有的div标签元素，返回div元素数组 
-$(&quot;.myCl">
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jquery选择器">
-<meta property="og:url" content="http://yoursite.com/2015/09/04/jquery选择器/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="\njQuery 的选择器可谓之强大无比，这里简单地总结一下常用的元素查找方法 
-\n 
-\n&amp;lt;!-- more --&amp;gt;\n$(&quot;#myELement&quot;)    选择id值等于myElement的元素，id值不能重复在文档中只能有一个id值是myElement所以得到的是唯一的元素 
-$(&quot;div&quot;)           选择所有的div标签元素，返回div元素数组 
-$(&quot;.myCl">
-<meta property="og:updated_time" content="2016-04-17T07:53:58.583Z">
+<meta property="og:url" content="http://zxldev.github.io/2015/09/04/jquery选择器/index.html">
+<meta property="og:site_name" content="赵枫杨的博客">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:updated_time" content="2016-04-17T08:05:46.834Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jquery选择器">
-<meta name="twitter:description" content="\njQuery 的选择器可谓之强大无比，这里简单地总结一下常用的元素查找方法 
-\n 
-\n&amp;lt;!-- more --&amp;gt;\n$(&quot;#myELement&quot;)    选择id值等于myElement的元素，id值不能重复在文档中只能有一个id值是myElement所以得到的是唯一的元素 
-$(&quot;div&quot;)           选择所有的div标签元素，返回div元素数组 
-$(&quot;.myCl">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="赵枫杨的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
   
-      <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
   
+      <link href="//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
   
   
       <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -54,7 +42,7 @@ $(&quot;.myCl">
   <script>
       var yiliaConfig = {
           fancybox: true,
-          animate: true,
+          animate: false,
           isHome: false,
           isPost: true,
           isArchive: false,
@@ -85,7 +73,7 @@ $(&quot;.myCl">
             <img src="/img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">John Doe</a></h1>
+          <h1 class="header-author"><a href="/">赵枫杨</a></h1>
         </hgroup>
 
         
@@ -153,7 +141,7 @@ $(&quot;.myCl">
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <li id="Email"><a class="Email" target="_blank" href="mailto:123@123.com" title="Email"></a></li>
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:zxldev@live.com" title="Email"></a></li>
                             
                                 <li id="GitHub"><a class="GitHub" target="_blank" href="#" title="GitHub"></a></li>
                             
@@ -201,7 +189,7 @@ $(&quot;.myCl">
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">赵枫杨</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -209,7 +197,7 @@ $(&quot;.myCl">
                 <img src="/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">赵枫杨</a></h1>
             </hgroup>
             
             <nav class="header-menu">
@@ -229,7 +217,7 @@ $(&quot;.myCl">
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <li id="Email"><a class="Email" target="_blank" href="mailto:123@123.com" title="Email"></a></li>
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:zxldev@live.com" title="Email"></a></li>
                             
                                 <li id="GitHub"><a class="GitHub" target="_blank" href="#" title="GitHub"></a></li>
                             
@@ -282,194 +270,7 @@ $(&quot;.myCl">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <pre><code class="js">\njQuery 的选择器可谓之强大无比，这里简单地总结一下常用的元素查找方法 
-\n 
-\n&lt;!-- more --&gt;\n$(<span class="string">"#myELement"</span>)    选择id值等于myElement的元素，id值不能重复在文档中只能有一个id值是myElement所以得到的是唯一的元素 
-$(<span class="string">"div"</span>)           选择所有的div标签元素，返回div元素数组 
-$(<span class="string">".myClass"</span>)      选择使用myClass类的css的所有元素 
-$(<span class="string">"*"</span>)             选择文档中的所有的元素，可以运用多种的选择方式进行联合选择：例如$(<span class="string">"#myELement,div,.myclass"</span>) 
-
-层叠选择器： 
-$(<span class="string">"form input"</span>)         选择所有的form元素中的input元素 
-$(<span class="string">"#main &gt; *"</span>)          选择id值为main的所有的子元素 
-$(<span class="string">"label + input"</span>)     选择所有的label元素的下一个input元素节点，经测试选择器返回的是label标签后面直接跟一个input标签的所有input标签元素 
-$(<span class="string">"#prev ~ div"</span>)       同胞选择器，该选择器返回的为id为prev的标签元素的所有的属于同一个父元素的div标签 
-
-基本过滤选择器： 
-$(<span class="string">"tr:first"</span>)               选择所有tr元素的第一个 
-$(<span class="string">"tr:last"</span>)                选择所有tr元素的最后一个 
-$(<span class="string">"input:not(:checked) + span"</span>)   
-
-过滤掉：checked的选择器的所有的input元素 
-
-$(<span class="string">"tr:even"</span>)               选择所有的tr元素的第<span class="number">0</span>，<span class="number">2</span>，<span class="number">4.</span>.. ...个元素（注意：因为所选择的多个元素时为数组，所以序号是从<span class="number">0</span>开始） 
-
-$(<span class="string">"tr:odd"</span>)                选择所有的tr元素的第<span class="number">1</span>，<span class="number">3</span>，<span class="number">5.</span>.. ...个元素 
-$(<span class="string">"td:eq(2)"</span>)             选择所有的td元素中序号为<span class="number">2</span>的那个td元素 
-$(<span class="string">"td:gt(4)"</span>)             选择td元素中序号大于<span class="number">4</span>的所有td元素 
-$(<span class="string">"td:ll(4)"</span>)              选择td元素中序号小于<span class="number">4</span>的所有的td元素 
-$(<span class="string">":header"</span>) 
-$(<span class="string">"div:animated"</span>) 
-内容过滤选择器： 
-
-$(<span class="string">"div:contains('John')"</span>) 选择所有div中含有John文本的元素 
-$(<span class="string">"td:empty"</span>)           选择所有的为空（也不包括文本节点）的td元素的数组 
-$(<span class="string">"div:has(p)"</span>)        选择所有含有p标签的div元素 
-$(<span class="string">"td:parent"</span>)          选择所有的以td为父节点的元素数组 
-可视化过滤选择器： 
-
-$(<span class="string">"div:hidden"</span>)        选择所有的被hidden的div元素 
-$(<span class="string">"div:visible"</span>)        选择所有的可视化的div元素 
-属性过滤选择器： 
-
-$(<span class="string">"div[id]"</span>)              选择所有含有id属性的div元素 
-$(<span class="string">"input[name='newsletter']"</span>)    选择所有的name属性等于<span class="string">'newsletter'</span>的input元素 
-
-$(<span class="string">"input[name!='newsletter']"</span>) 选择所有的name属性不等于<span class="string">'newsletter'</span>的input元素 
-
-$(<span class="string">"input[name^='news']"</span>)         选择所有的name属性以<span class="string">'news'</span>开头的input元素 
-$(<span class="string">"input[name$='news']"</span>)         选择所有的name属性以<span class="string">'news'</span>结尾的input元素 
-$(<span class="string">"input[name*='man']"</span>)          选择所有的name属性包含<span class="string">'news'</span>的input元素 
-
-$(<span class="string">"input[id][name$='man']"</span>)    可以使用多个属性进行联合选择，该选择器是得到所有的含有id属性并且那么属性以man结尾的元素 
-
-子元素过滤选择器： 
-
-$(<span class="string">"ul li:nth-child(2)"</span>),$(<span class="string">"ul li:nth-child(odd)"</span>),$(<span class="string">"ul li:nth-child(3n + 1)"</span>) 
-
-$(<span class="string">"div span:first-child"</span>)          返回所有的div元素的第一个子节点的数组 
-$(<span class="string">"div span:last-child"</span>)           返回所有的div元素的最后一个节点的数组 
-$(<span class="string">"div button:only-child"</span>)       返回所有的div中只有唯一一个子节点的所有子节点的数组 
-
-表单元素选择器： 
-
-$(<span class="string">":input"</span>)                  选择所有的表单输入元素，包括input, textarea, select 和 button 
-
-$(<span class="string">":text"</span>)                     选择所有的text input元素 
-$(<span class="string">":password"</span>)           选择所有的password input元素 
-$(<span class="string">":radio"</span>)                   选择所有的radio input元素 
-$(<span class="string">":checkbox"</span>)            选择所有的checkbox input元素 
-$(<span class="string">":submit"</span>)               选择所有的submit input元素 
-$(<span class="string">":image"</span>)                 选择所有的image input元素 
-$(<span class="string">":reset"</span>)                   选择所有的reset input元素 
-$(<span class="string">":button"</span>)                选择所有的button input元素 
-$(<span class="string">":file"</span>)                     选择所有的file input元素 
-$(<span class="string">":hidden"</span>)               选择所有类型为hidden的input元素或表单的隐藏域 
-
-表单元素过滤选择器： 
-
-$(<span class="string">":enabled"</span>)             选择所有的可操作的表单元素 
-$(<span class="string">":disabled"</span>)            选择所有的不可操作的表单元素 
-$(<span class="string">":checked"</span>)            选择所有的被checked的表单元素 
-$(<span class="string">"select option:selected"</span>) 选择所有的select 的子元素中被selected的元素 
-
-
-
-选取一个 name 为”S_03_22″的input text框的上一个td的text值
-$(”input[@ name =S_03_22]“).parent().prev().text() 
-
-名字以”S_”开始，并且不是以”_R”结尾的
-$(”input[@ name ^=<span class="string">'S_'</span>]“).not(”[@ name $=<span class="string">'_R'</span>]“) 
-
-一个名为 radio_01的radio所选的值
-$(”input[@ name =radio_01][@checked]“).val(); 
-
-
-
-
-
-$(<span class="string">"A B"</span>) 查找A元素下面的所有子节点，包括非直接子节点
-$(<span class="string">"A&gt;B"</span>) 查找A元素下面的直接子节点
-$(<span class="string">"A+B"</span>) 查找A元素后面的兄弟节点，包括非直接子节点
-$(<span class="string">"A~B"</span>) 查找A元素后面的兄弟节点，不包括非直接子节点 
-
-<span class="number">1.</span> $(<span class="string">"A B"</span>) 查找A元素下面的所有子节点，包括非直接子节点 
-
-例子：找到表单中所有的 input 元素 
-
-HTML 代码: 
-
-&lt;form&gt;
-&lt;label&gt;Name:&lt;/label&gt;
-&lt;input name="name" /&gt;
-&lt;fieldset&gt;
-      &lt;label&gt;Newsletter:&lt;/label&gt;
-      &lt;input name="newsletter" /&gt;
-&lt;/fieldset&gt;
-&lt;/form&gt;
-&lt;input name="none" /&gt; 
-jQuery 代码: 
-
-$("form input") 
-结果: 
-
-[ &lt;input name="name" /&gt;, &lt;input name="newsletter" /&gt; ] 
-
-2. $("A&gt;B") 查找A元素下面的直接子节点 
-例子：匹配表单中所有的子级input元素。 
-
-HTML 代码: 
-
-&lt;form&gt;
-&lt;label&gt;Name:&lt;/label&gt;
-&lt;input name="name" /&gt;
-&lt;fieldset&gt;
-      &lt;label&gt;Newsletter:&lt;/label&gt;
-      &lt;input name="newsletter" /&gt;
-&lt;/fieldset&gt;
-&lt;/form&gt;
-&lt;input name="none" /&gt; 
-jQuery 代码: 
-
-$("form &gt; input") 
-结果: 
-
-[ &lt;input name="name" /&gt; ] 
-
-3. $("A+B") 查找A元素后面的兄弟节点，包括非直接子节点 
-例子：匹配所有跟在 label 后面的 input 元素 
-
-HTML 代码: 
-
-&lt;form&gt;
-&lt;label&gt;Name:&lt;/label&gt;
-&lt;input name="name" /&gt;
-&lt;fieldset&gt;
-      &lt;label&gt;Newsletter:&lt;/label&gt;
-      &lt;input name="newsletter" /&gt;
-&lt;/fieldset&gt;
-&lt;/form&gt;
-&lt;input name="none" /&gt; 
-jQuery 代码: 
-
-$("label + input") 
-结果: 
-
-[ &lt;input name="name" /&gt;, &lt;input name="newsletter" /&gt; ] 
-
-
-4. $("A~B") 查找A元素后面的兄弟节点，不包括非直接子节点 
-例子：找到所有与表单同辈的 input 元素 
-
-HTML 代码: 
-
-&lt;form&gt;
-&lt;label&gt;Name:&lt;/label&gt;
-&lt;input name="name" /&gt;
-&lt;fieldset&gt;
-      &lt;label&gt;Newsletter:&lt;/label&gt;
-      &lt;input name="newsletter" /&gt;
-&lt;/fieldset&gt;
-&lt;/form&gt;
-&lt;input name="none" /&gt; 
-jQuery 代码: 
-
-$("form ~ input") 
-结果: 
-
-[ &lt;input name="none" /&gt; ]
-</code></pre>
-
+        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br></pre></td><td class="code"><pre><span class="line">jQuery 的选择器可谓之强大无比，这里简单地总结一下常用的元素查找方法 </span><br><span class="line"> </span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">$(<span class="string">"#myELement"</span>)    选择id值等于myElement的元素，id值不能重复在文档中只能有一个id值是myElement所以得到的是唯一的元素 </span><br><span class="line">$(<span class="string">"div"</span>)           选择所有的div标签元素，返回div元素数组 </span><br><span class="line">$(<span class="string">".myClass"</span>)      选择使用myClass类的css的所有元素 </span><br><span class="line">$(<span class="string">"*"</span>)             选择文档中的所有的元素，可以运用多种的选择方式进行联合选择：例如$(<span class="string">"#myELement,div,.myclass"</span>) </span><br><span class="line"> </span><br><span class="line">层叠选择器： </span><br><span class="line">$(<span class="string">"form input"</span>)         选择所有的form元素中的input元素 </span><br><span class="line">$(<span class="string">"#main &gt; *"</span>)          选择id值为main的所有的子元素 </span><br><span class="line">$(<span class="string">"label + input"</span>)     选择所有的label元素的下一个input元素节点，经测试选择器返回的是label标签后面直接跟一个input标签的所有input标签元素 </span><br><span class="line">$(<span class="string">"#prev ~ div"</span>)       同胞选择器，该选择器返回的为id为prev的标签元素的所有的属于同一个父元素的div标签 </span><br><span class="line"> </span><br><span class="line">基本过滤选择器： </span><br><span class="line">$(<span class="string">"tr:first"</span>)               选择所有tr元素的第一个 </span><br><span class="line">$(<span class="string">"tr:last"</span>)                选择所有tr元素的最后一个 </span><br><span class="line">$(<span class="string">"input:not(:checked) + span"</span>)   </span><br><span class="line"> </span><br><span class="line">过滤掉：checked的选择器的所有的input元素 </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"tr:even"</span>)               选择所有的tr元素的第<span class="number">0</span>，<span class="number">2</span>，<span class="number">4.</span>.. ...个元素（注意：因为所选择的多个元素时为数组，所以序号是从<span class="number">0</span>开始） </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"tr:odd"</span>)                选择所有的tr元素的第<span class="number">1</span>，<span class="number">3</span>，<span class="number">5.</span>.. ...个元素 </span><br><span class="line">$(<span class="string">"td:eq(2)"</span>)             选择所有的td元素中序号为<span class="number">2</span>的那个td元素 </span><br><span class="line">$(<span class="string">"td:gt(4)"</span>)             选择td元素中序号大于<span class="number">4</span>的所有td元素 </span><br><span class="line">$(<span class="string">"td:ll(4)"</span>)              选择td元素中序号小于<span class="number">4</span>的所有的td元素 </span><br><span class="line">$(<span class="string">":header"</span>) </span><br><span class="line">$(<span class="string">"div:animated"</span>) </span><br><span class="line">内容过滤选择器： </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"div:contains('John')"</span>) 选择所有div中含有John文本的元素 </span><br><span class="line">$(<span class="string">"td:empty"</span>)           选择所有的为空（也不包括文本节点）的td元素的数组 </span><br><span class="line">$(<span class="string">"div:has(p)"</span>)        选择所有含有p标签的div元素 </span><br><span class="line">$(<span class="string">"td:parent"</span>)          选择所有的以td为父节点的元素数组 </span><br><span class="line">可视化过滤选择器： </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"div:hidden"</span>)        选择所有的被hidden的div元素 </span><br><span class="line">$(<span class="string">"div:visible"</span>)        选择所有的可视化的div元素 </span><br><span class="line">属性过滤选择器： </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"div[id]"</span>)              选择所有含有id属性的div元素 </span><br><span class="line">$(<span class="string">"input[name='newsletter']"</span>)    选择所有的name属性等于<span class="string">'newsletter'</span>的input元素 </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"input[name!='newsletter']"</span>) 选择所有的name属性不等于<span class="string">'newsletter'</span>的input元素 </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"input[name^='news']"</span>)         选择所有的name属性以<span class="string">'news'</span>开头的input元素 </span><br><span class="line">$(<span class="string">"input[name$='news']"</span>)         选择所有的name属性以<span class="string">'news'</span>结尾的input元素 </span><br><span class="line">$(<span class="string">"input[name*='man']"</span>)          选择所有的name属性包含<span class="string">'news'</span>的input元素 </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"input[id][name$='man']"</span>)    可以使用多个属性进行联合选择，该选择器是得到所有的含有id属性并且那么属性以man结尾的元素 </span><br><span class="line"> </span><br><span class="line">子元素过滤选择器： </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"ul li:nth-child(2)"</span>),$(<span class="string">"ul li:nth-child(odd)"</span>),$(<span class="string">"ul li:nth-child(3n + 1)"</span>) </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"div span:first-child"</span>)          返回所有的div元素的第一个子节点的数组 </span><br><span class="line">$(<span class="string">"div span:last-child"</span>)           返回所有的div元素的最后一个节点的数组 </span><br><span class="line">$(<span class="string">"div button:only-child"</span>)       返回所有的div中只有唯一一个子节点的所有子节点的数组 </span><br><span class="line"> </span><br><span class="line">表单元素选择器： </span><br><span class="line"> </span><br><span class="line">$(<span class="string">":input"</span>)                  选择所有的表单输入元素，包括input, textarea, select 和 button </span><br><span class="line"> </span><br><span class="line">$(<span class="string">":text"</span>)                     选择所有的text input元素 </span><br><span class="line">$(<span class="string">":password"</span>)           选择所有的password input元素 </span><br><span class="line">$(<span class="string">":radio"</span>)                   选择所有的radio input元素 </span><br><span class="line">$(<span class="string">":checkbox"</span>)            选择所有的checkbox input元素 </span><br><span class="line">$(<span class="string">":submit"</span>)               选择所有的submit input元素 </span><br><span class="line">$(<span class="string">":image"</span>)                 选择所有的image input元素 </span><br><span class="line">$(<span class="string">":reset"</span>)                   选择所有的reset input元素 </span><br><span class="line">$(<span class="string">":button"</span>)                选择所有的button input元素 </span><br><span class="line">$(<span class="string">":file"</span>)                     选择所有的file input元素 </span><br><span class="line">$(<span class="string">":hidden"</span>)               选择所有类型为hidden的input元素或表单的隐藏域 </span><br><span class="line"> </span><br><span class="line">表单元素过滤选择器： </span><br><span class="line"> </span><br><span class="line">$(<span class="string">":enabled"</span>)             选择所有的可操作的表单元素 </span><br><span class="line">$(<span class="string">":disabled"</span>)            选择所有的不可操作的表单元素 </span><br><span class="line">$(<span class="string">":checked"</span>)            选择所有的被checked的表单元素 </span><br><span class="line">$(<span class="string">"select option:selected"</span>) 选择所有的select 的子元素中被selected的元素 </span><br><span class="line"> </span><br><span class="line">  </span><br><span class="line"> </span><br><span class="line">选取一个 name 为”S_03_22″的input text框的上一个td的text值</span><br><span class="line">$(”input[@ name =S_03_22]“).parent().prev().text() </span><br><span class="line"> </span><br><span class="line">名字以”S_”开始，并且不是以”_R”结尾的</span><br><span class="line">$(”input[@ name ^=<span class="string">'S_'</span>]“).not(”[@ name $=<span class="string">'_R'</span>]“) </span><br><span class="line"> </span><br><span class="line">一个名为 radio_01的radio所选的值</span><br><span class="line">$(”input[@ name =radio_01][@checked]“).val(); </span><br><span class="line"> </span><br><span class="line">  </span><br><span class="line"> </span><br><span class="line">  </span><br><span class="line"> </span><br><span class="line">$(<span class="string">"A B"</span>) 查找A元素下面的所有子节点，包括非直接子节点</span><br><span class="line">$(<span class="string">"A&gt;B"</span>) 查找A元素下面的直接子节点</span><br><span class="line">$(<span class="string">"A+B"</span>) 查找A元素后面的兄弟节点，包括非直接子节点</span><br><span class="line">$(<span class="string">"A~B"</span>) 查找A元素后面的兄弟节点，不包括非直接子节点 </span><br><span class="line"> </span><br><span class="line"><span class="number">1.</span> $(<span class="string">"A B"</span>) 查找A元素下面的所有子节点，包括非直接子节点 </span><br><span class="line"> </span><br><span class="line">例子：找到表单中所有的 input 元素 </span><br><span class="line"> </span><br><span class="line">HTML 代码: </span><br><span class="line"> </span><br><span class="line">&lt;form&gt;</span><br><span class="line">&lt;label&gt;Name:&lt;/label&gt;</span><br><span class="line">&lt;input name="name" /&gt;</span><br><span class="line">&lt;fieldset&gt;</span><br><span class="line">      &lt;label&gt;Newsletter:&lt;/label&gt;</span><br><span class="line">      &lt;input name="newsletter" /&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;input name="none" /&gt; </span><br><span class="line">jQuery 代码: </span><br><span class="line"> </span><br><span class="line">$("form input") </span><br><span class="line">结果: </span><br><span class="line"> </span><br><span class="line">[ &lt;input name="name" /&gt;, &lt;input name="newsletter" /&gt; ] </span><br><span class="line"> </span><br><span class="line">2. $("A&gt;B") 查找A元素下面的直接子节点 </span><br><span class="line">例子：匹配表单中所有的子级input元素。 </span><br><span class="line"> </span><br><span class="line">HTML 代码: </span><br><span class="line"> </span><br><span class="line">&lt;form&gt;</span><br><span class="line">&lt;label&gt;Name:&lt;/label&gt;</span><br><span class="line">&lt;input name="name" /&gt;</span><br><span class="line">&lt;fieldset&gt;</span><br><span class="line">      &lt;label&gt;Newsletter:&lt;/label&gt;</span><br><span class="line">      &lt;input name="newsletter" /&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;input name="none" /&gt; </span><br><span class="line">jQuery 代码: </span><br><span class="line"> </span><br><span class="line">$("form &gt; input") </span><br><span class="line">结果: </span><br><span class="line"> </span><br><span class="line">[ &lt;input name="name" /&gt; ] </span><br><span class="line"> </span><br><span class="line">3. $("A+B") 查找A元素后面的兄弟节点，包括非直接子节点 </span><br><span class="line">例子：匹配所有跟在 label 后面的 input 元素 </span><br><span class="line"> </span><br><span class="line">HTML 代码: </span><br><span class="line"> </span><br><span class="line">&lt;form&gt;</span><br><span class="line">&lt;label&gt;Name:&lt;/label&gt;</span><br><span class="line">&lt;input name="name" /&gt;</span><br><span class="line">&lt;fieldset&gt;</span><br><span class="line">      &lt;label&gt;Newsletter:&lt;/label&gt;</span><br><span class="line">      &lt;input name="newsletter" /&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;input name="none" /&gt; </span><br><span class="line">jQuery 代码: </span><br><span class="line"> </span><br><span class="line">$("label + input") </span><br><span class="line">结果: </span><br><span class="line"> </span><br><span class="line">[ &lt;input name="name" /&gt;, &lt;input name="newsletter" /&gt; ] </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">4. $("A~B") 查找A元素后面的兄弟节点，不包括非直接子节点 </span><br><span class="line">例子：找到所有与表单同辈的 input 元素 </span><br><span class="line"> </span><br><span class="line">HTML 代码: </span><br><span class="line"> </span><br><span class="line">&lt;form&gt;</span><br><span class="line">&lt;label&gt;Name:&lt;/label&gt;</span><br><span class="line">&lt;input name="name" /&gt;</span><br><span class="line">&lt;fieldset&gt;</span><br><span class="line">      &lt;label&gt;Newsletter:&lt;/label&gt;</span><br><span class="line">      &lt;input name="newsletter" /&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;input name="none" /&gt; </span><br><span class="line">jQuery 代码: </span><br><span class="line"> </span><br><span class="line">$("form ~ input") </span><br><span class="line">结果: </span><br><span class="line"> </span><br><span class="line">[ &lt;input name="none" /&gt; ]</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -478,12 +279,12 @@ $("form ~ input")
     
     <div class="copyright">
         <p><span>本文标题:</span><a href="/2015/09/04/jquery选择器/">jquery选择器</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">John Doe</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">赵枫杨</a></p>
         <p><span>发布时间:</span>2015-09-04, 14:29:21</p>
-        <p><span>最后更新:</span>2016-04-17, 15:53:58</p>
+        <p><span>最后更新:</span>2016-04-17, 16:05:46</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/09/04/jquery选择器/" title="jquery选择器">http://yoursite.com/2015/09/04/jquery选择器/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/09/04/jquery选择器/　　作者: John Doe" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/09/04/jquery选择器/" title="jquery选择器">http://zxldev.github.io/2015/09/04/jquery选择器/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://zxldev.github.io/2015/09/04/jquery选择器/　　作者: 赵枫杨" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -572,7 +373,7 @@ $("form ~ input")
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"jquery选择器　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"jquery选择器　| 赵枫杨的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -584,6 +385,26 @@ $("form ~ input")
 
 
 
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2015/09/04/jquery选择器/" data-title="jquery选择器" data-url="http://zxldev.github.io/2015/09/04/jquery选择器/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"zxldev"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
 
     
 
@@ -619,7 +440,7 @@ $("form ~ input")
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
-                &copy; 2016 John Doe
+                &copy; 2016 赵枫杨
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE
@@ -652,23 +473,28 @@ $("form ~ input")
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
 
 
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">
@@ -676,6 +502,8 @@ $("form ~ input")
     <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
+
+    <script src="//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
