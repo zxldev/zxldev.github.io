@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>postgresql | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="##sql 语句12-- 删除整个表里的数据，不记录日志，速度比DELETE语句快。TRUNCATE TABLE users;
+锁机制锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由">
+<meta property="og:type" content="article">
+<meta property="og:title" content="postgresql">
+<meta property="og:url" content="http://yoursite.com/2015/11/10/postgresql/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="##sql 语句12-- 删除整个表里的数据，不记录日志，速度比DELETE语句快。TRUNCATE TABLE users;
+锁机制锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由">
+<meta property="og:updated_time" content="2016-04-17T07:06:30.107Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="postgresql">
+<meta name="twitter:description" content="##sql 语句12-- 删除整个表里的数据，不记录日志，速度比DELETE语句快。TRUNCATE TABLE users;
+锁机制锁机制在 PostgreSQL 里非常重要 (对于其他现代的 RDBMS 也是如此)。对于数据库应用程序开发者（特别是那些涉及到高并发代码的程序员），需要对锁非常熟悉。对于某些问题，锁需要被重点关注与检查。大部分情况，这些问题跟死锁或者数据不一致有关系，基本上都是由">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -30,13 +34,8 @@
   
   <link rel="stylesheet" href="/css/style.css">
   
-      <style> .article { opacity: 0;} </style>
-  
   <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-    
-    
   
   
       <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
@@ -47,8 +46,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -232,134 +231,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-Could not apply the stored configuration for monitors" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/12/Could not apply the stored configuration for monitors/" class="article-date">
-      <time datetime="2016-04-12T08:28:02.000Z" itemprop="datePublished">2016-04-12</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/12/Could not apply the stored configuration for monitors/">Could not apply the stored configuration for monitors</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>删除文件<code>~/.config/monitors.xml</code></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/收藏/">收藏</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/centos/">centos</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-zephir" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/18/zephir/" class="article-date">
-      <time datetime="2015-12-18T06:59:41.000Z" itemprop="datePublished">2015-12-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/18/zephir/">zephir</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>#zephir</p>
-<p>###初始化项目<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zephir init xxx</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/代码/">代码</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zephir/">zephir</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-postgresql" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-postgresql" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/11/10/postgresql/" class="article-date">
@@ -375,12 +247,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/10/postgresql/">postgresql</a>
+    <h1 class="article-title" itemprop="name">
+      postgresql
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/代码/">代码</a>
+    </div>
+
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -418,208 +301,111 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/代码/">代码</a>
-    </div>
-
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-c" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/09/04/c/" class="article-date">
-      <time datetime="2015-09-04T06:29:09.000Z" itemprop="datePublished">2015-09-04</time>
-</a>
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2015/11/10/postgresql/">postgresql</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Doe</a></p>
+        <p><span>发布时间:</span>2015-11-10, 11:10:33</p>
+        <p><span>最后更新:</span>2016-04-17, 15:06:30</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2015/11/10/postgresql/" title="postgresql">http://yoursite.com/2015/11/10/postgresql/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/11/10/postgresql/　　作者: John Doe" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/04/c/">c</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <blockquote>
-<p>#La Isla Bonita</p>
-<p>###Madonna</p>
-<p>Last night I dreamt of San Pedro</p>
-<p>Just like I’d never gone, I knew the song</p>
-<p>A young girl with eyes like the desert</p>
-<p>It all seems like yesterday, not far away</p>
-<p>Chorus Tropical the island breeze</p>
-<p>All of nature, wild and free</p>
-<p>This is where I long to be</p>
-<p>La isla bonita</p>
-<p>And when the samba played</p>
-<p>The sun would set so high</p>
-<p>Ring through my ears and sting my eyes</p>
-<p>You Spanish lullaby</p>
-<p>I fell in love with San Pedro</p>
-<p>Warm wind carried on the sea, he called to me</p>
-<p>Te dijo te amo</p>
-<p>I prayed taht the days would last</p>
-<p>They went so fast</p>
-<p>Tropical the island breeze</p>
-<p>All of nature, wild and free</p>
-<p>This is where I long to be</p>
-<p>La isla bonita</p>
-<p>And when the samba played</p>
-<p>The sun would set so high</p>
-<p>Ring through my ears and sting my eyes</p>
-<p>You Spanish lullaby</p>
-<p>I want to be where the sun warms the sky</p>
-<p>When it’s time for siesta you can watch them go by</p>
-<p>Beautiful faces, no cares in this world</p>
-<p>Where a girl loves a boy</p>
-<p>And a boy loves a girl</p>
-<p>Last night I dreamt of San Pedro</p>
-<p>It all seems like yesterday, not far away</p>
-<p>Tropical the island breeze</p>
-<p>All of nature, wild and free</p>
-<p>This is where I long to be</p>
-<p>La isla bonita</p>
-<p>And when the samba played</p>
-<p>The sun would set so high</p>
-<p>Ring through my ears and sting my eyes</p>
-<p>You Spanish lullaby</p>
-<p>Tropical the island breeze</p>
-<p>All of nature, wild and free</p>
-<p>This is where I long to be</p>
-<p>La isla bonita</p>
-<p>And when the samba played</p>
-<p>The sun would set so high</p>
-<p>Ring through my ears and sting my eyes</p>
-<p>You Spanish lullaby</p>
-</blockquote>
-<h1 id="曾经"><a href="#曾经" class="headerlink" title="曾经"></a>曾经</h1><p>那是一首没有唱完的歌，当再次听到的时候，还是会想到很多。</p>
-<p>#C语言程序设计</p>
-<p>##阅读资料<br><a href="http://blog.csdn.net/feixiaoxing" target="_blank" rel="external">某C程序员博客</a></p>
-<p><a href="http://blog.chinaunix.net/uid-7440220-id-2626853.html" target="_blank" rel="external">另一个整理C</a></p>
-<p>##笔记</p>
-<p>##总结</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/收藏/">收藏</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-php" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/08/27/php/" class="article-date">
-      <time datetime="2015-08-27T08:56:24.000Z" itemprop="datePublished">2015-08-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/12/18/zephir/">
+                    zephir
+                </a>
+            </div>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/27/php/">php</a>
-    </h1>
-  
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/09/04/c/">
+                    c
+                </a>
+            </div>
+        
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>#php函数</p>
-<h3 id="extract"><a href="#extract" class="headerlink" title="extract"></a>extract</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">*extract(array,extract_rules,prefix)</span><br><span class="line">*/</span></span><br><span class="line">$a = <span class="string">'Original'</span>;</span><br><span class="line">$my_array = <span class="keyword">array</span>(<span class="string">"a"</span> =&gt; <span class="string">"Cat"</span>,<span class="string">"b"</span> =&gt; <span class="string">"Dog"</span>, <span class="string">"c"</span> =&gt; <span class="string">"Horse"</span>);</span><br><span class="line">extract($my_array);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"\$a = $a; \$b = $b; \$c = $c"</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="compact"><a href="#compact" class="headerlink" title="compact"></a>compact</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">*compact(var1,var2...)</span><br><span class="line">*/</span></span><br><span class="line">$firstname = <span class="string">"Peter"</span>;</span><br><span class="line">$lastname = <span class="string">"Griffin"</span>;</span><br><span class="line">$age = <span class="string">"38"</span>;</span><br><span class="line"></span><br><span class="line">$name = <span class="keyword">array</span>(<span class="string">"firstname"</span>, <span class="string">"lastname"</span>);</span><br><span class="line">$result = compact($name, <span class="string">"location"</span>, <span class="string">"age"</span>);</span><br><span class="line"></span><br><span class="line">print_r($result);</span><br><span class="line"><span class="comment">//Array</span></span><br><span class="line"><span class="comment">//(</span></span><br><span class="line"><span class="comment">//[firstname] =&gt; Peter</span></span><br><span class="line"><span class="comment">//[lastname] =&gt; Griffin</span></span><br><span class="line"><span class="comment">//[age] =&gt; 38</span></span><br><span class="line"><span class="comment">//)</span></span><br></pre></td></tr></table></figure>
-<p>#php代码</p>
-<p>###替换字符串模板函数<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">     * 从数组中获取值填充模板字符串</span><br><span class="line">     * <span class="doctag">@param</span> $template string 模板字符串 </span><br><span class="line">     *      $template = "商品名字是:&#123;pname&#125;"</span><br><span class="line">     * <span class="doctag">@param</span> $arr array 数组</span><br><span class="line">     *      $arr = array(</span><br><span class="line">                'pname'=&gt;"surface book"</span><br><span class="line">     *      )</span><br><span class="line">     * <span class="doctag">@return</span> mixed</span><br><span class="line">     *      "商品名字是:surface book"</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">getStrTemplateValue</span><span class="params">($template,$arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> preg_replace_callback(<span class="string">'/\&#123;(\w+)\&#125;/'</span>,<span class="function"><span class="keyword">function</span> <span class="params">($value)</span> <span class="title">use</span><span class="params">($arr)</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">empty</span>($arr[$value[<span class="number">1</span>]])?<span class="string">''</span>:$arr[$value[<span class="number">1</span>]];</span><br><span class="line">        &#125;,$template);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/代码/">代码</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#锁机制"><span class="toc-number">1.</span> <span class="toc-text">锁机制</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <li id="bds_twi"><a href="#" class="bds_twi" data-cmd="twi" title="分享到推特"></a></li>
+            <li id="bds_tsina"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></li>
+            <li id="bds_sqq"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a></li>
+            <li id="bds_copy"><a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a></li>
+            <li id="bds_mail"><a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a></li>
+            <li id="bds_weixin"><a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a></li>
+            <li id="bds_more"><a href="#" class="bds_more" data-cmd="more"></i></a></li>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"postgresql　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -627,9 +413,35 @@
 
 
 
+    
 
-  
-  
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/12/18/zephir/" title="上一篇: zephir">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/09/04/c/" title="下一篇: c">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/Could not apply the stored configuration for monitors/">Could not apply the stored configuration for monitors</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/18/zephir/">zephir</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/10/postgresql/">postgresql</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/04/c/">c</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/27/php/">php</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
